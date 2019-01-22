@@ -1,0 +1,26 @@
+using System;
+
+namespace CGPACALC
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your course code:");
+            string code = Console.ReadLine();
+            Console.WriteLine("Enter your CA marks out of 25:");
+            double camarks = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your midterm marks out of 20:");
+            double midterm = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your endterm marks out of 50:");
+            double endterm = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter you attendence marks out of 5:");
+            double attendence = double.Parse(Console.ReadLine());
+            double total = camarks + midterm + endterm + attendence;
+            Console.WriteLine("Total Marks:" + total);
+            double cgpa = total / 9;
+            Console.WriteLine("CGPA:" + cgpa);
+            Console.ReadKey();
+        }
+    }
+}
