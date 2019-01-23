@@ -1,0 +1,20 @@
+using System;
+
+namespace empsal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter no. of working days:");
+            int days = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter gross salary:");
+            int salary = int.Parse(Console.ReadLine());
+            double allowance = 1000 + (salary/31*days) - (10*salary/100);
+            Console.WriteLine("net salary:" + allowance);
+            Console.ReadKey();
+
+
+        }
+    }
+}
