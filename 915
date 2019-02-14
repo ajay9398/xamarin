@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Working with Bootstrap</title>
+    <script src="js/boot.js"></script>
+    <script src="js/boot1.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type ="text/css">
+     <link rel="stylesheet" href="css/boot2.css" type ="text/css">
+    <script src="js/boot2.js"></script>
+</head>
+    <body>
+        
+        <br>
+        <div class=dropdown align=center>
+            <button data-toggle=dropdown >MENU</button>
+            <ul class=dropdown-menu>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li class= divider></li>
+                <li><a href="#">Happy Valentines's Day</a></li>
+            </ul>
+        </div>
+        <br>
+        
+        
+        
+    <table border=5  class =table-info align=center>
+        <tr>
+        <td>HELLO</td>
+            <td>AJAY</td>
+            <td><img src="img/images.jpg.jpg" class="img-responsive img-circle" width=200 height=200</td>
+        </tr>
+        <tr>
+        <td>HELLO</td>
+            <td>RK</td>
+            <td><img src="img/images.jpg.jpg" class="img-responsive img-rounded" width=200 height=200</td>
+        </tr>
+        <tr>
+        <td>HELLO</td>
+            <td>PK</td>
+            <td><img src="img/images.jpg.jpg" class="img-responsive img-thumbnail" width=200 height=200</td>
+        </tr>
+        </table>
+        <div align=center class=well> Hello ajay</div>
+         <div align=center>
+        <button class=btn-info >Button1</button>
+        <button class=btn-danger >Button2</button>
+        
+           <button class="btn-info active" >Active </button>
+        <button class="btn-danger disabled" >Disabled</button></div>
+        
+        <div  class=btn-group style="color:aquamarine" >
+           <button  class=btn-info>click1</button>
+        <button  class=btn-warning>click2</button>
+        </div>
+        
+        <ul class=pagination>
+            
+            <li><a href =#>1</a></li>
+            <li><a href =#>2</a></li>
+            <li class=disabled><a href =#>3</a></li>
+            <li class=active><a href =#>4</a></li>
+            <li> <a href =#>Previous</a></li>
+        </ul>
+        <ul class=breadcrumb>
+            <li> <a href=#>1</a></li>
+            <li> <a href=#>2</a></li>
+            <li class=active> <a href=#>3</a></li>
+            <li class=active> <a href=#>4</a></li>
+        
+        
+        </ul>
+        <ul class=pager>
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </body>
+</html>
