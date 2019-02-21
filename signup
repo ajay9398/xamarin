@@ -1,0 +1,32 @@
+
+<html>
+<title>
+LOG IN</title>
+<body><center>
+<h1>LOG IN</h1></center></body>
+<form name="login"><center>
+    <label>User ID</label>
+    <input type="text" id="t1"><br> <br>
+    <label>Password</label>
+    <input type="password" id="t2"><br><br>
+    <input type="button" value="Log in" onClick="validateform();" /><br><br></center>
+</form>
+
+<script>
+    function validateform() 
+{
+        var x = document.getElementById("t1").value;
+        var y = document.getElementById("t2").value;
+        var username = "11605998"; 
+        var password = "123456789";
+        if ((x == username) && (y == password)) 
+	{
+            window.location = "signup.html";
+            return false;
+        }
+        else {
+            alert ("User ID or Password doesn't match");
+        }
+      }
+</script>
+</html>
