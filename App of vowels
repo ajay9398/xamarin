@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Pingu"
+             BackgroundColor="Red"
+             
+             
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+            <Entry x:Name="txtValue1" Placeholder="Enter first value"></Entry>
+            <Entry x:Name="txtValue2" Placeholder="Enter second value"></Entry>
+            <Label x:Name="lblResult" FontSize="Large"></Label>
+            <Button Text="String cal" Clicked="myclick"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+
+
+
+cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace App3
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Pingu : ContentPage
+    {
+        public Pingu()
+        {
+            InitializeComponent();
+        }
+        public void myclick(object sender, EventArgs args)
+        {
+            int i;
+            int vowel = 0;
+            string str1 = txtValue1.Text;
+            string str2 = txtValue2.Text;
+            string str = (str1 + str2).ToUpper();
+            for(i=0;i<str.Length;i++)
+            {
+                if (str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]== 'O' || str[i] == 'U')
+                    {
+                    vowel++;
+                }
+            }
+            lblResult.Text = "The no. of vowels are: " + vowel.ToString();
+
+
+        }
+
+    }
+}
