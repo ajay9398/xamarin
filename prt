@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.PRT"
+             BackgroundColor="LightYellow">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+            <Entry x:Name="txtValue1" Placeholder="Enter Principle"></Entry>
+            <Entry x:Name="txtValue2" Placeholder="Enter Age"></Entry>
+            <Label x:Name="result" FontSize="Large"></Label>
+            <Button Text="Calculate SI" Clicked="myclick"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace App3
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class PRT : ContentPage
+    {
+        public PRT()
+        {
+            InitializeComponent();
+        }
+
+        public void myclick(object sender, EventArgs args)
+        {
+            int t=3;
+            int val1=int.Parse(txtValue1.Text);
+            int val2 = int.Parse(txtValue2.Text);
+            float SI;
+            if (val2 < 65)
+            {
+                SI = val1 * 15 * t / 100;
+                result.Text = "Simple interest: " + SI;
+            }
+            else
+            {
+                SI = val1 * 12 * t / 100;
+                result.Text = "Simple interest: " + SI; ;
+            }
+            result.Text = "Simple interest: " + SI;
+
+        }
+
+    }
+}
